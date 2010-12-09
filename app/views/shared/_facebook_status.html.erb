@@ -1,0 +1,17 @@
+
+<% if current_facebook_user %>
+<div id="facebook-status">
+  <div class="thumb">
+    <fb:profile-pic uid="loggedinuser" facebook-logo="true" size="square"></fb:profile-pic>
+  </div>
+  <div class="content">
+    <div class="welcome">Welcome, <fb:name uid='loggedinuser' useyou='false' linked='false'></fb:name></div>
+    <div class="links">
+      <a href="/account">My Account</a>
+      |
+      <%= raw fb_logout_link('Sign out', request.url) %>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<% end %>

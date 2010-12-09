@@ -1,0 +1,29 @@
+
+#facebook-status {
+  height: 50px;
+  max-width: 250px;
+  padding: 12px 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px 8px;
+  -moz-border-radius: 8px 8px;
+  -webkit-border-radius: 8px 8px;
+}
+
+#facebook-status .thumb {
+  float: left;
+}
+
+#facebook-status .thumb img {
+}
+
+#facebook-status .content {
+  color: white;
+  float: left;
+  padding: 8px;
+}
+
+#facebook-status .welcome {
+}
+
+#facebook-status .links {
+}
