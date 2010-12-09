@@ -1,0 +1,27 @@
+h1. Spree + Facebook
+
+Facebook API integration for your Spree store, using the facebooker2 gem.
+
+h3. Installation 
+
+Add to project's Gemfile:
+<pre><code>
+gem 'spree_facebooker', '>=0.1', :git => 'git://github.com/dylanmei/spree-facebooker.git'
+</code></pre>
+
+Run from project's root:
+<pre><code>
+bundle install
+rake spree_facebooker:install
+rake db:migrate
+</code></pre>
+
+h3. Configuration 
+
+Create config/facebooker.yml within your Spree site.
+
+production:
+  app_id: <your application id>
+  secret: <your application secret>
+  api_key: <your application key>
+
