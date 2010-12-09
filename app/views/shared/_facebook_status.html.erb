@@ -1,5 +1,5 @@
 
-<% if current_facebook_user %>
+<% if current_user and current_facebook_user %>
 <div id="facebook-status">
   <div class="thumb">
     <fb:profile-pic uid="loggedinuser" facebook-logo="true" size="square"></fb:profile-pic>
@@ -9,9 +9,9 @@
     <div class="links">
       <a href="/account">My Account</a>
       |
-      <%= raw fb_logout_link('Sign out', request.url) %>
+      <%= raw fb_logout_link('Sign out', '/logout') %>
     </div>
   </div>
-  <div class="clear"></div>
+  <div class="clearfix"></div>
 </div>
 <% end %>

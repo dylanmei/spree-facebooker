@@ -1,5 +1,12 @@
 
 Facebooker2::Rails::Helpers::FacebookConnect.module_eval do
+  def fb_login_and_connect(options = {})
+    fb_login_and_redirect(
+      url_for(:controller => 'user_sessions', :action => 'connect'),
+      options
+    )
+  end
+
   def fb_login_and_redirect(url, options = {})
     text = options.delete(:text)
     script = "facebooker.login('#{url}');"
