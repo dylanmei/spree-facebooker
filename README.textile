@@ -21,7 +21,8 @@ h3. Configuration
 Create config/facebooker.yml within your Spree site.
 
 production:
-  app_id: <your application id>
-  secret: <your application secret>
-  api_key: <your application key>
+p(.  app_id: [your application id]
+p(.  secret: [your application secret]
+p(.  api_key: [your application key]
+p(.  permissions: [your,permission,list]
 
