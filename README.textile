@@ -2,6 +2,10 @@ h1. Spree + Facebook
 
 Facebook API integration for your Spree store, using the facebooker2 gem.
 
+h3. Project has moved
+
+<pre>http://github.com/thoughtful/spree-facebooker</pre>
+
 h3. Installation 
 
 Add to project's Gemfile:
